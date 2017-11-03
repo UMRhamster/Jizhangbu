@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.a12421.jizhangbu.Edit">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#AEE0F3"
+        >
+        <!--添加Toolbar的子控件-->
+        <!--?attr/actionBarSize-->
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_back"
+            android:layout_gravity="left"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="新建账单"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/edit_complite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:textColor="#7666DA"
+            android:textSize="14sp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/edit_info"
+        android:layout_height="280dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="@mipmap/editinfobg"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="top"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/edit_finance"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="@string/hint_finance"
+        android:inputType="numberDecimal"
+        android:paddingLeft="5dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/edit_info"
+        android:background="@mipmap/finance_edit"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+
+         />
+</RelativeLayout>

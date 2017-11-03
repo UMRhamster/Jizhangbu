@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">记账簿</string>
+    <string name="hint_finance">请输入消费金额</string>
+</resources>
